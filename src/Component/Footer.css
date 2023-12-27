@@ -1,0 +1,36 @@
+
+.footer{
+    height: 50vh;
+    
+}
+.newsletter{
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.798);
+    color: white;
+}
+form{
+    height: 30px;
+}
+.btn{
+    padding: 0;
+    border: 1px solid black;
+    border-radius: 0;
+    height: 100%;
+    background-color: white;
+}
+input{
+    height: 100%;
+}
+.copyright{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+
+}
+

@@ -1,0 +1,84 @@
+.heroContainer{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+
+.box-1{
+    
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 250px 250px;
+    gap: 10px;
+
+    
+}
+.box a{
+    background-color: green;
+    cursor: pointer;
+    
+}
+.box a .h:hover{
+    background-color: rgba(0, 0, 0, 0.413);
+
+
+}
+.pic-1{
+    grid-row: span 2;
+    grid-column: span 2;
+    background-image: url(https://images.pexels.com/photos/1125130/pexels-photo-1125130.jpeg?auto=compress&cs=tinysrgb&w=800);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+
+}
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.pic-2{
+    grid-row: span 2;
+    background-image: url(https://images.pexels.com/photos/1090638/pexels-photo-1090638.jpeg?auto=compress&cs=tinysrgb&w=800);
+    background-size: cover;
+    background-position: center;
+}
+
+.h{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.204);
+    position: relative;
+}
+.pic-3{
+    background-image: url(https://images.pexels.com/photos/1042152/pexels-photo-1042152.jpeg?auto=compress&cs=tinysrgb&w=800);
+    
+    background-size: cover;
+    background-position: center;
+}
+.pic-4{
+    background-image: url(https://images.pexels.com/photos/533157/pexels-photo-533157.jpeg?auto=compress&cs=tinysrgb&w=800);
+    background-size: cover;
+    background-position: center;
+}
+.main-description{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+@media (max-width: 768px) { 
+    .box-1{
+        grid-template-columns: 1fr 1fr;
+
+    }
+    .pic-1, .pic-2{
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+ }
