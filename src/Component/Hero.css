@@ -14,12 +14,12 @@
 
     
 }
-.box a{
+.box-1 a{
     background-color: green;
     cursor: pointer;
     
 }
-.box a .h:hover{
+.box-1 a .h:hover{
     background-color: rgba(0, 0, 0, 0.413);
 
 

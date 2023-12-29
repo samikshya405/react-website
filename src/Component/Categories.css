@@ -1,0 +1,25 @@
+
+.choosebtn{
+    
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px 0;
+}
+.choosebtn a{
+    text-transform: uppercase;
+    background-color: white;
+    border: 2px solid rgba(128, 128, 128, 0.297);
+    
+    padding: 5px 10px;
+
+}
+
+.choosebtn a:hover{
+    border-color: black;
+}
+@media (max-width:576px){
+    .choosebtn{
+        flex-wrap: wrap;
+    }
+}

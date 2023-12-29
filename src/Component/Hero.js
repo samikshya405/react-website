@@ -8,27 +8,27 @@ function Hero() {
     <>
     <div className='heroContainer'>
         <div className='box-1'>
-            <Link className='pic-1'>
+            <Link to='/categories' className='pic-1'>
                 <div className='h'>
                 <p className='main-description'>Furniture</p>
                 </div>
                 
 
             </Link>
-            <Link className='pic-2'>
+            <Link to='/categories' className='pic-2'>
                 <div className='h'>
                     <p className='main-description'>Decoration</p>
                 </div>
                 
                 
             </Link>
-            <Link className='pic-3'>
+            <Link to='/categories' className='pic-3'>
                 <div className='h'>
                     <p className='main-description'>Light</p>
                 </div>
                     
             </Link>
-            <Link className='pic-4'>
+            <Link to='/categories' className='pic-4'>
                 <div className='h'>
                     <p className='main-description'>Kitchen</p>
                 </div>

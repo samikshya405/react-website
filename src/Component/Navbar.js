@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
+import { faCartShopping} from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
 
@@ -14,7 +14,7 @@ function Navbar() {
         <div className='logo'>Forever</div>
         <div className='navbar'>
         <div>
-        <Link>CATEGORIES</Link>
+        <Link to='/categories'>CATEGORIES</Link>
         </div>
         <div>
         <Link>PRODUCT PAGE</Link>

@@ -1,8 +1,10 @@
+
 .productContainer{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
     margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 .title{
     font-weight: 600;
@@ -23,16 +25,27 @@
 }
 .product img{
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     height: 200px;
     margin-bottom: 5px;
     
 }
+.productNameP{
+    padding-left: 10px;
+    text-transform: capitalize;
+}
 .productPrice{
     font-weight: 700;
     font-size: 20px;
+    padding-left: 10px;
     
 }
+.productImage img{
+    width: 100%;
+}
+
+
+
 @media (max-width:768px) {
     .product{
         grid-template-columns: 1fr 1fr 1fr;

@@ -1,5 +1,7 @@
 import React from 'react'
 import './BannerOne.css'
+import { Link } from 'react-router-dom'
+import Example from './Example'
 
 function BannerOne() {
   return (
@@ -9,12 +11,13 @@ function BannerOne() {
             <div className='content'>
                 <h2>Our Signature Style</h2>
                 <p>"Furnishing Dreams, Creating Comfort: Your Home, Your Heaven Experience the Art of Elegant Living with Us!"</p>
-                <button>Shop Now</button>
+                <Link to='/categories'><button>Shop Now</button></Link>
 
             </div>
             <div className='photo'>
 
             </div>
+            <Example/>
 
         </div>
 
