@@ -1,7 +1,7 @@
 import React from 'react'
 import './BannerOne.css'
 import { Link } from 'react-router-dom'
-import Example from './Example'
+
 
 function BannerOne() {
   return (
@@ -17,7 +17,7 @@ function BannerOne() {
             <div className='photo'>
 
             </div>
-            <Example/>
+            
 
         </div>
 

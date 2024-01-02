@@ -6,6 +6,10 @@
   height: 40vmin;
   pointer-events: none;
 }
+a.active{
+  color: green;
+  font-weight: bold;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

@@ -56,6 +56,10 @@
     text-align: end;
     padding-right: 30px;
 }
+.wishlistIcon{
+    font-size: 40px;
+   
+}
 @media (max-width:576px){
     .middle{
         grid-template-columns: 1fr;

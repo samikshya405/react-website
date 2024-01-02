@@ -6,7 +6,6 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 
 
-
 import './App.css';
 import Navbar from './Component/Navbar';
 
@@ -15,6 +14,10 @@ import Home from './Component/Home';
 import Footer from './Component/Footer';
 import Categories from './Component/Categories';
 import ScrollToTop from './Component/ScrollToTop';
+import ProductPage from './Component/ProductPage';
+import WishList from './Component/WishList';
+import Emptycart from './Component/Emptycart';
+import Cart from './Component/Cart';
 
 
 function App() {
@@ -26,6 +29,9 @@ function App() {
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route  path='/categories' element={<Categories/>}/>
+      <Route path='/productPage' element={<ProductPage/>}/>
+      <Route path='/wishlist' element={<WishList/>}/>
+      <Route path='/cart' element={<Cart/>}/>
     </Routes>
     <Footer/>
     </>

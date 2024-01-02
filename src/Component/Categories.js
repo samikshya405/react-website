@@ -1,81 +1,92 @@
-import React, { useState } from 'react'
-import { items } from './AllData' 
-import { Link, NavLink } from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React, { useState } from "react";
+import { items } from "./AllData";
+import { Link, NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
-import './Categories.css'
-import ProductModal from './ProductModal'
-import Furniture from './Furniture'
-import Kitchen from './Kitchen'
-
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import "./Categories.css";
+import ProductModal from "./ProductModal";
+import ProductItem from "./ProductItem";
 
 function Categories() {
-    const [allItems, setallItems] = useState([...items])
-    const handleFurniture=()=>{
-        const furnitureItems= items.filter(item=>item.category.toLowerCase()==='furniture')
-        setallItems([...furnitureItems])
-
-    }
-    const handleDecoration=()=>{
-        const decorationItems= items.filter(item=>item.category.toLowerCase()==='decoration')
-        setallItems([...decorationItems])
-
-    }
-    const handleKitchen=()=>{
-        const kitchenItems= items.filter(item=>item.category.toLowerCase()==='kitchen')
-        setallItems([...kitchenItems])
-
-    }
-    const handleLight=()=>{
-        const lightItems= items.filter(item=>item.category.toLowerCase()==='light')
-        setallItems([...lightItems])
-
-    }
-    const handleAll=()=>{
-        const everyItems= [...items]
-        setallItems([...everyItems])
-
-    }
-
+  const [allItems, setallItems] = useState([...items]);
+  const [productsTitle, setproductsTitle] = useState("All")
+  const handleFurniture = () => {
+    const furnitureItems = items.filter(
+      (item) => item.category.toLowerCase() === "furniture"
+    );
+    setallItems([...furnitureItems]);
+    setproductsTitle("Furniture")
+  };
+  const handleDecoration = () => {
+    const decorationItems = items.filter(
+      (item) => item.category.toLowerCase() === "decoration"
+    );
+    setallItems([...decorationItems]);
+    setproductsTitle("Decoration")
+  };
+  const handleKitchen = () => {
+    const kitchenItems = items.filter(
+      (item) => item.category.toLowerCase() === "kitchen"
+    );
+    setallItems([...kitchenItems]);
+    setproductsTitle('Kitchen')
+  };
+  const handleLight = () => {
+    const lightItems = items.filter(
+      (item) => item.category.toLowerCase() === "light"
+    );
+    setallItems([...lightItems]);
+    setproductsTitle("Light")
+  };
+  const handleAll = () => {
+    const everyItems = [...items];
+    setallItems([...everyItems]);
+    setproductsTitle("All")
+  };
 
   return (
     <>
-    <div className='productContainer'>
-        
+      <div className="productContainer">
         <div>
-            <div className='back'>
-                <Link to='/'><FontAwesomeIcon icon={faArrowLeft} /> Home</Link>
-            </div>
-        <div className='choosebtn'>
-            <NavLink className='all' onClick={handleAll}>All</NavLink>
-            <NavLink className='furniture' onClick={handleFurniture}>Furniture</NavLink>
-            <NavLink className='decoration' onClick={handleDecoration}>decoration</NavLink>
-            <NavLink className='kitchen' onClick={handleKitchen}>kitchen</NavLink>
-            <NavLink className='light' onClick={handleLight}>light</NavLink>
-        </div>
-        </div>
-        <div className='product'>
-           {
-                allItems.map(item=>{
-                    return <Link key={item.id} data-bs-toggle="modal" data-bs-target={`#exampleModal${item.id}`}>
-                                <img src={item.img} alt=''/>
-                                <p className='productNameP'>{item.name}</p>
-
-                                <p className='productPrice'>${item.price}</p>
-                                <ProductModal item ={item}/>
-                            </Link>
-                }) 
-            }
-            
-              
+          <div className="back">
+            <Link to="/">
+              <FontAwesomeIcon icon={faArrowLeft} /> Home
+            </Link>
+          </div>
+          <h1 className="text-center">{productsTitle}</h1>
+          <div className="choosebtn">
+            <Link className="all" onClick={handleAll}>
+              All
+            </Link>
+            <Link className="furniture" onClick={handleFurniture}>
+              Furniture
+            </Link>
+            <Link className="decoration" onClick={handleDecoration}>
+              decoration
+            </Link>
+            <Link className="kitchen" onClick={handleKitchen}>
+              kitchen
+            </Link>
+            <Link className="light" onClick={handleLight}>
+              light
+            </Link>
+          </div>
         </div>
         
-
-
-    </div>
+        <div className="product">
+          {allItems.map((item) => {
+            return (
+              <Link key={item.id}>
+                <ProductModal item={item} />
+                <ProductItem item={item}/>
+              </Link>
+            );
+          })}
+        </div>
+      </div>
     </>
-  )
+  );
 }
 
-export default Categories
+export default Categories;

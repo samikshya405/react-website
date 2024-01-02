@@ -1,32 +1,45 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartShopping} from '@fortawesome/free-solid-svg-icons'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import './Navbar.css'
+import { Cartitem } from './Context'
 
 
 function Navbar() {
+  const {cart,setcart}= useContext(Cartitem)
+  const carti=[...cart]
+  const n=carti.reduce((a,b)=>{
+    return a+b.number
+  },0)
   return (
     <>
+  
    <div className='navcontainer'>
 
    <nav className='nav'>
-        <div className='logo'>Forever</div>
+        <div className='logo'>HomePulse</div>
         <div className='navbar'>
         <div>
-        <Link to='/categories'>CATEGORIES</Link>
+        <NavLink to='/'>HOME</NavLink>
         </div>
         <div>
-        <Link>PRODUCT PAGE</Link>
+        <NavLink to='/categories'>CATEGORIES</NavLink>
+        </div>
+        <div>
+        <NavLink to='/wishlist'>WISHLIST</NavLink>
         </div>
         <div >
-        <Link className='cart'><FontAwesomeIcon icon={faCartShopping} /><span></span></Link>
+        <NavLink to='/cart' className='cart'><FontAwesomeIcon icon={faCartShopping}/><sup>{n}</sup></NavLink>
         </div>
         
 
         </div>
+       
     </nav>
+   
    </div>
+   
     
     
     </>
