@@ -9,13 +9,10 @@ function Kitchen() {
     <>
     {
                 kitchenItems.map(item=>{
-                    return <Link key={item.id} data-bs-toggle="modal" data-bs-target={`#exampleModal${item.id}`}>
-                                <img src={item.img} alt=''/>
-                                <p className='productNameP'>{item.name}</p>
-
-                                <p className='productPrice'>${item.price}</p>
-                                <ProductModal item ={item}/>
-                            </Link>
+                    return <div key={item.id} >
+                    <ProductModal item={item} />
+                   <ProductItem item ={item}/>
+                  </div>
                 })
             }
     

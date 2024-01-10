@@ -14,8 +14,10 @@ function Navbar() {
   },0)
   return (
     <>
+ 
   
    <div className='navcontainer'>
+    
 
    <nav className='nav'>
         <div className='logo'>HomePulse</div>

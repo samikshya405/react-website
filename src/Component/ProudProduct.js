@@ -22,10 +22,10 @@ function ProudProduct() {
         <div className="product">
           {filteredItems.map((item) => {
             return (
-              <Link key={item.id}>
+              <div key={item.id} >
                 <ProductModal item={item} />
                <ProductItem item ={item}/>
-              </Link>
+              </div>
             );
           })}
         </div>

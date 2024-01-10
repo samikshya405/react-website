@@ -42,7 +42,7 @@ function CartProduct({item}) {
           </div>
           <div className='pricebox'>
             <div>
-              ${item.price*item.number}
+              ${(item.price*item.number).toFixed(2)}
             </div>
             <div className='text-end deletebtn' onClick={()=>handleDelete(item)}>
               <FontAwesomeIcon icon={faTrashCan}/>

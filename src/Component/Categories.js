@@ -75,13 +75,13 @@ function Categories() {
         </div>
         
         <div className="product">
-          {allItems.map((item) => {
+          {allItems.map(item => {
             return (
-              <Link key={item.id}>
-                <ProductModal item={item} />
-                <ProductItem item={item}/>
-              </Link>
-            );
+              <div  key={item.id} >
+              <ProductModal item ={item}/>
+               <ProductItem item={item}/>
+              </div>
+              )
           })}
         </div>
       </div>

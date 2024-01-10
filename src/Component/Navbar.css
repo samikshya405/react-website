@@ -37,6 +37,14 @@ a{
     z-index: 99;
     box-shadow: 2px 2px rgba(128, 128, 128, 0.128);
 }
+.cus{
+    display:flex;
+    gap: 10px;
+}
+.c{
+   display: flex; 
+   align-items: center;
+}
 @media (max-width:768px){
     .navbar{
         /* display: none; */
