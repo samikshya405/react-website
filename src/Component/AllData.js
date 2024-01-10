@@ -20,6 +20,27 @@ import img18 from './Img/img18.avif'
 import img19 from './Img/img19.avif'
 import img20 from './Img/img20.avif'
 import imgone from './Img/Otherproduct/img1-1.avif'
+import imgTwo from './Img/Otherproduct/img2-1.avif'
+import imgThree from './Img/Otherproduct/img3-1.avif'
+import imgFour from './Img/Otherproduct/img4-1.avif'
+import imgFive from './Img/Otherproduct/img5-2.avif'
+import imgSix from './Img/Otherproduct/img6-1.avif'
+import imgSeven from './Img/Otherproduct/img7-1.avif'
+import imgEight from './Img/Otherproduct/img8-1.avif'
+import imgNine from './Img/Otherproduct/img9-1.avif'
+import imgTen from './Img/Otherproduct/img10-1.avif'
+import imgEleven from './Img/Otherproduct/img11-1.avif'
+import imgTwelve from './Img/Otherproduct/img12-1.avif'
+import imgThirteen from './Img/Otherproduct/img13-1.avif'
+import imgFourteen from './Img/Otherproduct/img14-1.avif'
+import imgFifteen from './Img/Otherproduct/img15-1.avif'
+import imgsixteen from './Img/Otherproduct/img16-1.avif'
+import imgSeventeen from './Img/Otherproduct/img17-1.avif'
+import imgEightteen from './Img/Otherproduct/img18-1.avif'
+import imgNineTeen from './Img/Otherproduct/img19-1.avif'
+import imgTwenty from './Img/Otherproduct/img20-1.avif'
+
+
 
 
 export const items = [
@@ -44,7 +65,7 @@ export const items = [
         description:"Relish your morning coffee or afternoon tea from these beautiful Blue Glass Mugs.",
         size:"7cm (H) x 12.16cm (Dia.)",
         color:"pink",
-        img1:imgone
+        img1:imgTwo
 
 
     },
@@ -57,7 +78,7 @@ export const items = [
         description:"Modern and stylish, this desk lamp will be perfect for your reading, studying or any other activity.",
         size:"11.5cm (Dia) x 15cm (Dia) x 40cm (40cm)",
         color:"black",
-        img1:imgone
+        img1:imgThree
 
     },
     {
@@ -69,7 +90,7 @@ export const items = [
         description:"This table lamp brings a unique modern style to your indoor space and perfectly illuminates your reading nook.",
         size:"12cm (H) x 8cm (Dia.)",
         color:"white",
-        img1:imgone
+        img1:imgFour
 
 
     },
@@ -82,7 +103,7 @@ export const items = [
         description:"De-clutter and organise everyday knick-knacks or personal essentials with this chest of drawers.",
         size:"80cm (H) x 60cm (W) x 40cm (D)",
         color:"oak look",
-        img1:imgone
+        img1:imgFive
 
     },
     {
@@ -94,7 +115,7 @@ export const items = [
         description:"Give your indoor space a refreshing update with this artificial plant that comes in a pot.",
         size:"9.3cm (H) x 10cm (Dia.)",
         color:"ceramic",
-        img1:imgone
+        img1:imgSix
 
 
 
@@ -108,7 +129,7 @@ export const items = [
         description:"Add an elegant touch to your side table or living room with the artificial pampas grass in a vase.",
         size:"36.5cm (H) x 20cm (W) x 17cm (D)",
         color:"ceramic",
-        img1:imgone
+        img1:imgSeven
 
     },
     {
@@ -120,7 +141,7 @@ export const items = [
         description:"Enjoy the perfect toast every morning with this 4 slice toaster that features a slide out crumb tray for easy cleaning.",
         size:" 29.6cm (L) x 27.9cm (H) x 21.1cm (W)",
         color:"white",
-        img1:imgone
+        img1:imgEight
 
 
     },
@@ -133,7 +154,7 @@ export const items = [
        description:"With a classic design, this 3 seater Adele sofa will blend perfectly with any decor aesthetic.",
        size:"80cm (H) x 193cm (W) x 84cm (D)",
        color:"beige",
-       img1:imgone
+       img1:imgNine
     },
     {
         id:10,
@@ -144,7 +165,7 @@ export const items = [
         description:"Turn your treats into a centrepiece of delight with this elegant and eye-catching decorative dessert stand - a great pick for your next party or social gathering.",
         size:"80cm (H) x 79.5cm (W) x 22cm (D)",
         color:"white",
-        img1:imgone
+        img1:imgTen
 
 
 
@@ -159,7 +180,7 @@ export const items = [
         description:"Brighten up your indoor space with the 3 Pack Pillar Holders that will complement any room decor.",
         size:"12cm (H) x 10cm (Dia.)",
         color:"white",
-        img1:imgone
+        img1:imgEleven
     },
     {
         id:12,
@@ -170,7 +191,7 @@ export const items = [
         description:"Illuminate your home with a joyful vibe this festive season by picking up our pretty jar lights.",
         size:"7.3cm (L) x 8.6cm (H) x 7.4cm (W)",
         color:"transparent",
-        img1:imgone
+        img1:imgTwelve
 
     },
     {
@@ -182,7 +203,7 @@ export const items = [
         description:"Add a touch of modern elegance to your home with this timber boucle chair that will blend wonderfully with any decor.",
         size:"78cm (H) x 64cm (W) x 71cm (D)",
         color:"Natural",
-        img1:imgone
+        img1:imgThirteen
     },
     {
         id: 14,
@@ -193,7 +214,7 @@ export const items = [
         description:"Upgrade your gaming experience with this uber-cool RGB Gaming Chair with Speakers.",
         size:"133cm (H) x 65cm (W) x 32cm (D)",
         color:"black",
-        img1:imgone
+        img1:imgFourteen
     },
     {
         id: 15,
@@ -204,7 +225,7 @@ export const items = [
         description:"This comfy and stylish round-shaped ottoman will be a perfect piece for any home decor.",
         size:"45cm (H) x 40cm (Dia.)",
         color:"beige",
-        img1:imgone
+        img1:imgFifteen
     },
     {
         id:16 ,
@@ -215,7 +236,7 @@ export const items = [
         description:"*Each sold separately Create a beautiful galaxy in your little one's bedroom with this projector light.",
         size:"13.5cm (H) x 11.2cm (W) x 10.8cm (D)",
         color:"blue",
-        img1:imgone
+        img1:imgsixteen
     },
     {
         id:17 ,
@@ -226,7 +247,7 @@ export const items = [
         description:"Prepare delicious and crispy fries, nuggets and more in this air fryer.",
         size:"40.6cm (H) x 36cm (W) x 33cm (D)",
         color:"black",
-        img1:imgone
+        img1:imgSeventeen
     },
     {
         id:18 ,
@@ -237,7 +258,7 @@ export const items = [
         description:"Make lip-smacking dishes using this slow cooker featuring multiple temperature settings. It includes a removable ceramic pot for ease of use.",
         size:"42cm x 30cm x 25.6cm",
         color:"black",
-        img1:imgone
+        img1:imgEightteen
     },
     {
         id:19 ,
@@ -248,7 +269,7 @@ export const items = [
         description:"Showcase small potted plants and other decor accents on this rattan look round wall shelf. ",
         size:"12.5cm (D) x 51cm (Dia.)",
         color:"Browm",
-        img1:imgone
+        img1:imgNineTeen
     },
     {
         id:20 ,
@@ -259,7 +280,7 @@ export const items = [
         description:"Enhance your living room decor with these pretty artificial succulents that come in a rattan look pot.",
         size:"8.5cm (H) x 8.5cm (Dia.)",
         color:"white",
-        img1:imgone
+        img1:imgTwenty
     }
     
 ]
