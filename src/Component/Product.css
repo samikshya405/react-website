@@ -58,6 +58,7 @@
     border: 2px solid rgba(128, 128, 128, 0.297);
     padding: 2px 8px;
     border-radius: 10px;
+    cursor: pointer;
     
     /* color: rgba(128, 128, 128, 0.297); */
 }

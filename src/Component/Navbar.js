@@ -32,7 +32,7 @@ function Navbar() {
         <NavLink to='/wishlist'>WISHLIST</NavLink>
         </div>
         <div >
-        <NavLink to='/cart' className='cart'><FontAwesomeIcon icon={faCartShopping}/><sup>{n}</sup></NavLink>
+        <NavLink to='/cart' className='cart'><FontAwesomeIcon icon={faCartShopping}/><sup className='text-danger fw-bold'>{n}</sup></NavLink>
         </div>
         
 
