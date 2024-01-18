@@ -6,6 +6,8 @@ import { faHeart as solidHeart} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Cartitem } from "./Context";
 import RelatedProduct from "./RelatedProduct";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function ProductPage() {
   const { id } = useParams();
@@ -29,6 +31,7 @@ function ProductPage() {
     displayHeart()
   },[{wishlistCart}])
   const handleAdd = (item,numberOfitem) => {
+
     const existingCart = [...cart]
     const found =existingCart.findIndex(product=>product.id===item.id)
     if(found>=0){
@@ -41,6 +44,15 @@ function ProductPage() {
 
     }
     setnumberOfitem(1)
+    toast.success(`${item.name} added to your cart`, {
+      position: 'top-right', // You can set the position (top-right, top-center, bottom-right, etc.)
+      autoClose: 2000, // Time in milliseconds after which the toast will close automatically
+      hideProgressBar: true, // Set to true if you want to hide the progress bar
+      closeOnClick: true, // Close the toast on click
+      pauseOnHover: true, // Pause the close timer when the user hovers over the toast
+      draggable: true, // Allow the toast to be draggable
+    });
+
    
     
     
@@ -61,15 +73,28 @@ function ProductPage() {
       setheartIcon(solidHeart)
       const wishCart =[...wishlistCart,item]
       setwishlistCart(wishCart)
-      alert('Do you want to add item to your wishlist?')
+      toast.success(`${item.name} added to your wishlist`, {
+        position: 'top-right', // You can set the position (top-right, top-center, bottom-right, etc.)
+        autoClose: 2000, // Time in milliseconds after which the toast will close automatically
+        hideProgressBar: true, // Set to true if you want to hide the progress bar
+        closeOnClick: true, // Close the toast on click
+        pauseOnHover: true, // Pause the close timer when the user hovers over the toast
+        draggable: true, // Allow the toast to be draggable
+      });
       
 
     }else{
       setheartIcon(regularHeart)
       const wishCart =[...wishlistCart].filter(product=>product.id!==item.id)
       setwishlistCart(wishCart)
-      alert('Do you want to remove item from your wishlist')
-    }
+      toast.success(`${item.name} removed from your wishlist`, {
+        position: 'top-right', // You can set the position (top-right, top-center, bottom-right, etc.)
+        autoClose: 2000, // Time in milliseconds after which the toast will close automatically
+        hideProgressBar: true, // Set to true if you want to hide the progress bar
+        closeOnClick: true, // Close the toast on click
+        pauseOnHover: true, // Pause the close timer when the user hovers over the toast
+        draggable: true, // Allow the toast to be draggable
+      });    }
     
 
   }
